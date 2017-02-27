@@ -1,5 +1,5 @@
 <?php
-include_once("xlsxwriter.class.php");
+include_once("XLSXWriter.php");
 
 
 $header = array(
@@ -13,5 +13,3 @@ $row = array(100,200,300,400,500);
 $writer = new XLSXWriter();
 $writer->writeSheet(array($row),'Sheet1', $header);
 $writer->writeToFile('example.xlsx');
-
-

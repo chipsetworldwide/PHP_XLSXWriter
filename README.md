@@ -26,11 +26,11 @@ $writer->writeToFile('output.xlsx');
 
 Multiple Sheets:
 ```php
-$data1 = array(  
+$data1 = array(
      array('5','3'),
      array('1','6'),
 );
-$data2 = array(  
+$data2 = array(
      array('2','7','9'),
      array('4','8','0'),
 );
@@ -65,7 +65,7 @@ $writer->writeToFile('example.xlsx');
 
 Load test with 50000 rows: (runs fast, with low memory usage)
 ```php
-include_once("xlsxwriter.class.php");
+include_once("XLSXWriter.php");
 $header = array('c1'=>'string','c2'=>'string','c3'=>'string','c4'=>'string');
 $writer = new XLSXWriter();
 $writer->writeSheetHeader('Sheet1', $header );//optional

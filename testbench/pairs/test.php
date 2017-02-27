@@ -1,5 +1,5 @@
 <?php
-include_once("../../xlsxwriter.class.php");
+include_once("../../XLSXWriter.php");
 
 $writer = new XLSXWriter();
 $writer->setAuthor('Some Author');
@@ -51,7 +51,7 @@ $header = array(
     'YY'=>'YY',
     'YYYY'=>'YYYY',
     'Q YY'=>'Q YY',
-    'Q YYYY'=>'Q YYYY',   
+    'Q YYYY'=>'Q YYYY',
 );
 $row = array('1999-01-01','1999-01-01','1999-12-31','1999-12-31 00:00:00',
 	'1999-12-31','1999-12-31','1999-12-31',
@@ -71,7 +71,3 @@ $row = array('12-31-1999 01:23:00','12-31-1999 01:23:00','12-31-1999 01:23:00','
 $writer->writeSheet(array( $row ) ,'Time',$header);
 
 $writer->writeToFile('formats_.xlsx');
-
-
-
-

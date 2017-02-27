@@ -1,5 +1,5 @@
 <?php
-include_once("xlsxwriter.class.php");
+include_once("XLSXWriter.php");
 
 $writer = new XLSXWriter();
 $writer->writeSheetHeader('Sheet1', array('c1'=>'string','c2'=>'string','c3'=>'string','c4'=>'string') );//optional

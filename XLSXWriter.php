@@ -445,7 +445,7 @@ class XLSXWriter
 		$file->write(		'<cellStyle builtinId="3" customBuiltin="false" name="Comma" xfId="15"/>');
 		$file->write(		'<cellStyle builtinId="6" customBuiltin="false" name="Comma [0]" xfId="16"/>');
 		$file->write(		'<cellStyle builtinId="4" customBuiltin="false" name="Currency" xfId="17"/>');
-		$file->write(		'<cellStyle builtinId="7" customBuiltin="false" name="Currency [0]" xfId="18"/>');
+		$file->write(		'<cellStyle builtinIxlsxwriterd="7" customBuiltin="false" name="Currency [0]" xfId="18"/>');
 		$file->write(		'<cellStyle builtinId="5" customBuiltin="false" name="Percent" xfId="19"/>');
 		$file->write(	'</cellStyles>');
 		$file->write('</styleSheet>');

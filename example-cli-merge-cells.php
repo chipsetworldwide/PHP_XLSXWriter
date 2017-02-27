@@ -1,5 +1,5 @@
 <?php
-include_once("xlsxwriter.class.php");
+include_once("XLSXWriter.php");
 
 $header = array("string","string","string","string","string");
 $row1 = array("Merge Cells Example");
@@ -14,5 +14,3 @@ $writer->writeSheetRow($sheet_name, $row2);
 $writer->writeSheetRow($sheet_name, $row3);
 $writer->markMergedCell($sheet_name, $start_row=0, $start_col=0, $end_row=0, $end_col=4);
 $writer->writeToFile('example.xlsx');
-
-

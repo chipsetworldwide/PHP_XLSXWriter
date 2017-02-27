@@ -1,5 +1,5 @@
 <?php
-include_once("../xlsxwriter.class.php");
+include_once("../XLSXWriter.php");
 
 $header = array(
     'year'=>'string',
@@ -21,6 +21,3 @@ $writer->setAuthor('Some Author');
 $writer->writeSheet($data1,'Sheet1',$header);
 $writer->writeSheet($data2,'Sheet2');
 $writer->writeToFile('test.xlsx');
-
-
-

@@ -1,5 +1,5 @@
 <?php
-include_once("xlsxwriter.class.php");
+include_once("XLSXWriter.php");
 
 $header = array(
     'year'=>'string',
@@ -24,5 +24,3 @@ $writer->writeToFile('example.xlsx');
 //$writer->writeToStdOut();
 //echo $writer->writeToString();
 exit(0);
-
-

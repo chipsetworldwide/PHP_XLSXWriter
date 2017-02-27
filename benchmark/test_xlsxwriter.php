@@ -1,7 +1,7 @@
 <?php
 //php test_xlsxwriter.php >out.xlsx
 //Generates a spreadsheet with multiple sheets, 10K rows, 10 columns
-include_once(__DIR__.'/../xlsxwriter.class.php');
+include_once(__DIR__.'/../XLSXWriter.php');
 
 $headers = array('id'=>'string', 'name'=>'string', 'description'=>'string', 'n1'=>'string', 'n2'=>'string', 'n3'=>'string', 'n4'=>'string', 'n5'=>'string', 'n6'=>'string', 'n7'=>'string');
 $sheet_names = array('january','february','march','april','may','june');
@@ -35,6 +35,3 @@ function random_row() {
 				rand()%10000,
 		);
 }
-
-
-
